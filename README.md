@@ -1,8 +1,26 @@
 # contact-list
+### a simple contacts list application in react + mobx + cssnext
 
-## Css Modules 说明
-- 全局样式书写时，用`:global`包裹；使用时，使用`className="class"`
-- 局部样式直接书写，使用时，使用`styleName="class"`
+## get started
+
+```
+yarn install
+
+```
+or
+
+```
+npm install
+
+```
+
+then
+
+```
+npm start
+
+```
+
 
 ## 目录结构
 
