@@ -1,5 +1,6 @@
 import { observable, action, runInAction, computed, useStrict } from 'mobx';
 import Ajax from 'ajax';
+import { isArray } from 'common/utils/validator';
 
 useStrict(true);
 
@@ -26,7 +27,7 @@ export default class Store {
         delay: 500
       }
     });
-    if (res) {
+    if (res && isArray(res) && res.length > 0) {
       runInAction('fetch success', () => {
         this.loadStatus = 1;
         this.contacts = res;
